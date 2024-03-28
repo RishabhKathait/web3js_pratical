@@ -1,0 +1,21 @@
+Step 1: node
+
+Step 2: const Web3 = require("web"3);
+
+Step 3: const rocURL = "infura link";
+
+Step 4: const web3 = new Web3(rpcURL);
+
+Step 5: const abi = copy from remix after compilation of smart contract
+
+Step 6: const address = "your address";
+
+Step 7: const contract = new web3.eth.Contract(abi,contract deplyment address);
+
+Step 8: conract.methods.totalSupply().call((err,result) => {console.log(result) });
+
+Step 9: contract.methods.name().call((err,result) => {console.log(result) });
+
+Step 10: contract.methods.symbol().call((err,result) => {console.log(result) });
+
+Step 11: contract.methods.balanceOf('your address').call((err,result) => {console.log(result) }); 
